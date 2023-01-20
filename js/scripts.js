@@ -7,10 +7,18 @@ function robo(numb){
     originalArray[i] = i
     };
   let roboTalk = [0, 'Beep', 'Boop!', "'Won't you be my neighbor?'", 4, 5,'We all have different gifts!', 7, "'I don't wear sweaters, I'm a robot'", 9];
-  //transfer roboTalk into OriginalArray creating newArray, not branching yet
+  //transfer roboTalk into OriginalArray creating newArray, adding branching
   let roboTalkComplete = [];
   for (i = 0; i < roboTalk.length; i ++) {
-    roboTalkComplete[i] = roboTalk[i];
+    if (originalArray[i] !== roboTalk[i]) {
+      roboTalkComplete[i] = roboTalk[i];
+    }
+    else if (originalArray[i] === roboTalk[i]) {
+      roboTalkComplete[i] = originalArray[i];
+    }
+    else {
+      window.alert("Error in branching")
+    };
   };
   roboTalkCompleteS = roboTalkComplete.toString();
   return roboTalkCompleteS;
