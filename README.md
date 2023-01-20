@@ -25,12 +25,17 @@ Code: robo(2);
 Expected Output:  0, "Beep"
 Actual Output: 0 Beep //ok
 
-#
  .501
 Test: returns test of hard coded array
 Code: console.log(beepsArray)
 Expected Output: [0, 'Beep', 'Boop!', 'Won't you be my neighbor?', 4, 5,'We all have different gifts!', 7, 'I don't wear sweaters, I'm a robot', 9]
 Actual Output: 0,Beep,Boop!,'Won't you be my neighbor?',4,5,We all have different gifts!,7,'I don't wear sweaters, I'm a robot',9 //ok
+
+#
+  .511
+Test: returns new array: originalArray
+Code: console.log(originalArray)
+Expected Output: ([0, 1, 2, {...}, 9])
 
  .6
 Test: loops to change input value into outputArray
