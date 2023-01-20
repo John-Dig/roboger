@@ -19,17 +19,18 @@ Test: returns 2 characters
 Code: robo(2);
 Expected Output: 0, 1 
 
-#
  .401
 Test: returns 1 of the characters changed
 Code: robo(2);
 Expected Output:  0, "Beep"
 Actual Output: 0 Beep //ok
 
- .5
+#
+ .501
 Test: returns test of hard coded array
 Code: console.log(beepsArray)
 Expected Output: [0, 'Beep', 'Boop!', 'Won't you be my neighbor?', 4, 5,'We all have different gifts!', 7, 'I don't wear sweaters, I'm a robot', 9]
+Actual Output: 0,Beep,Boop!,'Won't you be my neighbor?',4,5,We all have different gifts!,7,'I don't wear sweaters, I'm a robot',9 //ok
 
  .6
 Test: loops to change input value into outputArray
