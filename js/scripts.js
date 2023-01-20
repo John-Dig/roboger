@@ -1,24 +1,41 @@
 //Business Logic
 
 function robo(numb){
-  //create original counting array
+  //counting array
   counterArray = [];
   for (i = 0; i < numb; i++) {
     counterArray[i] =  i;
-    };
+  };
+  //roboTemp
   let roboTemp = [0, 'Beep', 'Boop!', "'Won't you be my neighbor?'", 4, 5,'We all have different gifts!', 7, "'I don't wear sweaters, I'm a robot'", 9];
+  //roboTemp past 9
+  if (numb > 9) {
+    for (i = 10; i < numb; i ++){
+      if (typeof(roboTemp[i-10]) == 'string'){ 
+        console.log("worked");
+        roboTemp[i] = roboTemp[i % 10];
+      }
+        
+        else {  
+          roboTemp[i] = counterArray[i]
+        }
+    }
+    console.log(roboTemp);
+  }
   //transfer roboTemp into OriginalArray creating newArray, adding branching
+  
+  //console.log(toString(roboTemp[7]).includes(7))
+  //console.log(counterArray[12].toString());
+  
   let roboTalkFinal = [];
     for (i = 0; i < numb; i ++) {
     //after 9, must switch individual iteration to string
-    console.log(counterArray[i]);
-    if (i > 9 && toString(counterArray[i]).includes(1)) {
-      console.log("HERE");
-      roboTalkFinal[i] = roboTalkFinal[i].toString()
-      roboTemp[i] =
-      console.log(typeof(roboTalkFinal[i]))
-      if (roboTalkFinal[i].includes(1)) {
-        roboTalkFinal[i] = roboTemp[1];
+    if (i > 9)  {
+          //roboTalkFinal[i] = roboTemp[i].toString();
+      //roboTemp[i] =
+      //console.log(typeof(roboTalkFinal[i]))
+      if (true === true) {
+        //roboTalkFinal[i] = roboTemp[1];
       }
       else if (roboTalkFinal[i].includes(2)) {
         roboTalkFinal[i] = roboTemp[2]
@@ -36,12 +53,9 @@ function robo(numb){
     }
     else if (counterArray[i % 10] !== roboTemp[i % 10]) {
       roboTalkFinal[i] = roboTemp[i % 10];
-      console.log (i % 10);
     }
     else if (counterArray[i % 10] === roboTemp[i % 10]) {
       roboTalkFinal[i] = counterArray[i % 10];
-      
-      console.log (i % 10);
     }
     else {
       window.alert("Error in branching")
