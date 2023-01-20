@@ -6,16 +6,15 @@ function robo(numb){
   for (i = 0; i < 10; i++) {
     originalArray[i] = i
     };
-  console.log(originalArray);  
   let roboTalk = [0, 'Beep', 'Boop!', "'Won't you be my neighbor?'", 4, 5,'We all have different gifts!', 7, "'I don't wear sweaters, I'm a robot'", 9];
+  //transfer roboTalk into OriginalArray creating newArray, not branching yet
+  let roboTalkComplete = [];
   for (i = 0; i < roboTalk.length; i ++) {
-    let roboTalkComplete = [];
-    //roboTalkComplete[i] = 
+    roboTalkComplete[i] = roboTalk[i];
   };
-  roboTalkCompleteS = roboTalk.toString();
-  numb = roboTalkCompleteS;
-  return numb;
+  roboTalkCompleteS = roboTalkComplete.toString();
+  return roboTalkCompleteS;
 }
 
-robo(1);
-//console.log(robo(1));
+//robo(1);
+console.log(robo(9));
