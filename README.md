@@ -4,25 +4,27 @@ Test: framework is set: it outputs to live server console for easier further tes
 Code: console.log("test");
 Expected Output: "test"
 
-.11
+ .11
 Test: returns input
 Code: robo(5);
 Expected Output: 5
 
- .201
+.201
 Test: returns first character
-Code: robo(1)
+Code: robo(1);
 Expected Output: 0
 
  .3
 Test: returns 2 characters
-Code: robo(2)
+Code: robo(2);
 Expected Output: 0, 1 
 
- .4
+#
+ .401
 Test: returns 1 of the characters changed
 Code: robo(2);
 Expected Output:  0, "Beep"
+Actual Output: 0 Beep //ok
 
  .5
 Test: returns test of hard coded array
