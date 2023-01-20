@@ -57,10 +57,9 @@ Test: outputs 150 values
 Code: robo(149);
 Expected Output: 0,Beep,Boop!,Won't you be my neighbor?,4,5,We all have different gifts!, 7,I don't wear sweaters,I'm a robot,9,0, Beep,Boop!,Won't you be my neighbor?,4 {...}
 
- .91
-
-  
-Test: 
-Code: 
-Expected Output: 
+ .95
+Test: now outputs contingent on index number CONTAINING specific digit.
+Test: robo(20)
+Code: robo(20);
+Expected Output: {...}, 9, beep, beep, Boop!,'Won't you be my neighbor?',beep,beep,We all have different gifts!,beep,I don't wear sweaters, I'm a robot,beep,boop! 
  
