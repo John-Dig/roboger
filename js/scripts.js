@@ -1,2 +1,11 @@
 //Business Logic
-console.log('test');
+
+function robo(numb){
+
+  return numb
+}
+
+
+
+
+console.log(robo(1));
