@@ -1,11 +1,16 @@
 Describe: robo()
-# .1
+ .1
 Test: framework is set: it outputs to live server console for easier further testing
 Code: console.log("test");
 Expected Output: "test"
 
- .2
-Test: returns something
+.11
+Test: returns input
+Code: robo(5);
+Expected Output: 5
+
+ .201
+Test: returns first character
 Code: robo(1)
 Expected Output: 0
 
