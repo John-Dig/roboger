@@ -42,29 +42,23 @@ Code: robo(9);
 Expected Output: 0,'Beep','Boop!',"'Won't you be my neighbor?'",4,5,'We all have different gifts!',7,"'I don't wear sweaters, I'm a robot'",9 
 
  .71
-Test: make unlimited number counter into array
+Test: make repeating number counter into array
 Code: robo(150); console.log(originalArray)
 Expected Output: (150) [0, 1, 2, ...] 
 
- .8
-Test: outputs 10 values and uses branching
-Code: robo(9);
-Expected Output: 0, Beep, Boop!, Won't you be my neighbor?, 4, 5,We all have different gifts!, 7, I don't wear sweaters, I'm a robot, 9
-
-
-
-
-
 #
- .9
-Test: outputs 15 values
+ .802
+Test: outputs 15 values and uses branching. Must output to HTML due to limitations of console
 Code: robo(14);
-Expected Output: 0, Beep, Boop!, Won't you be my neighbor?, 4, 5,We all have different gifts!, 7, I don't wear sweaters, I'm a robot, 9, 0, Beep, Boop!, Won't you be my neighbor?, 4
+Expected Output: 0,Beep,Boop!,'Won't you be my neighbor?',4,5,We all have different gifts!,7,'I don't wear sweaters, I'm a robot',9,0,Beep,Boop!,'Won't you be my neighbor?',4
+
+ .901
+Test: outputs 150 values
+Code: robo(149);
+Expected Output: 0,Beep,Boop!,Won't you be my neighbor?,4,5,We all have different gifts!, 7,I don't wear sweaters,I'm a robot,9,0, Beep,Boop!,Won't you be my neighbor?,4 {...}
 
  .91
-Test: outputs 100 values
-Code: 
-Expected Output: 0, Beep, Boop!, Won't you be my neighbor?, 4, 5,We all have different gifts!, 7, I don't wear sweaters, I'm a robot, 9, 0, {...} I'm a robot, 9
+
   
 Test: 
 Code: 
