@@ -28,8 +28,7 @@ function robo(numb){
 }
 //document.getElementById("outputArea").innerText = wordCensor(document.getElementById("text-passage").value);
 
-//robo(15);
-robo(15);
+robo(150);
 
 // UI Logic
 window.addEventListener("load", function(e){
