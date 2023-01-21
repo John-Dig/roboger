@@ -8,7 +8,7 @@ function robo(numb){
     counterArray[i] =  i;
   };
   //roboTemp
-  let roboTemp = [0, 'Beep', 'Boop!', "'Won't you be my neighbor?'", 4, 5,'We all have different gifts!', 7, "'I don't wear sweaters, I'm a robot'", 9];
+  let roboTemp = [0, 'Beep', 'Boop!', "'Won't you be my neighbor?'", 4, 5,"'We all have different gifts!'", 7, "'I don't wear sweaters, I'm a robot'", 9];
   //roboTemp past 9
   if (numb > 9) {
     for (i = 10; i < numb; i ++){
@@ -52,10 +52,16 @@ function robo(numb){
 roboTalkFinalSpace = roboTalkFinal.join("  ~  ",);
 //return roboTalkFinalSpace;
 }        
-robo(200);
+
 
 // UI Logic
 window.addEventListener("load", function(e){
   e.preventDefault();
-  document.getElementById("output").innerText = roboTalkFinalSpace
+  document.getElementById("button").addEventListener("click", function() {
+    let argument = document.getElementById("input-area").value
+    console.log(argument);
+    robo(argument)
+
+    document.getElementById("output").innerText = roboTalkFinalSpace
+  });
 });
