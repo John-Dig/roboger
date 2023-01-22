@@ -71,7 +71,9 @@ Expected Output: {...}, 9, beep, beep, Boop!,'Won't you be my neighbor?',beep,be
 
 1.0
 1.01 functions with return
-# 1.1 add timeout
+1.1 add timeout
+
+1.2 acceleration/ deceleration
 
 
 -still need
