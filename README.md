@@ -56,6 +56,11 @@ Expected Output: 0,Beep,Boop!,'Won't you be my neighbor?',4,5,We all have differ
 Test: outputs 150 values
 Code: robo(149);
 Expected Output: 0,Beep,Boop!,Won't you be my neighbor?,4,5,We all have different gifts!, 7,I don't wear sweaters,I'm a robot,9,0, Beep,Boop!,Won't you be my neighbor?,4 {...}
+-robo temp has to repeat numb times
+-need to determine functional logic to branch off
+
+-roboTemp array has to use branching
+-roboTemp has to have 2 digit numbers
 
  .95
 Test: now outputs contingent on index number CONTAINING specific digit.
@@ -63,3 +68,11 @@ Test: robo(20)
 Code: robo(20);
 Expected Output: {...}, 9, beep, beep, Boop!,'Won't you be my neighbor?',beep,beep,We all have different gifts!,beep,I don't wear sweaters, I'm a robot,beep,boop! 
  
+
+1.0
+1.01 functions with return
+# 1.1 add timeout
+
+
+-still need
+readme complete
