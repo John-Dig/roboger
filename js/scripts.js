@@ -8,7 +8,7 @@ function robo(numb){
     counterArray[i] =  i;
   };
   //roboTemp
-  let roboTemp = [0, 'Beep', 'Boop!', "'Won't you be my neighbor?'", 4, 5,"'We all have different gifts!'", 7, "'I don't wear sweaters, I'm a robot'", 9];
+  let roboTemp = [0, 'Beep', 'Boop!', "'Won't you be my neighbor?'", 4, 5,"'We all have different gifts!'", 7, "'I don't wear sweaters, I'm a robot ¯\_(ツ)_/¯'", 9];
   //roboTemp past 9
   if (numb > 9) {
     for (i = 10; i < numb; i ++){
@@ -63,11 +63,19 @@ window.addEventListener("load", function(e){
     const outputArea = document.getElementById("output-area");
     const createO = document.createElement("p");
     outputString = outputArray.toString();
-    for (i = 0; i < 100; i = setInterval(i++, 5000))
-    outputArea.append(outputString.charAt(i));
-    setInterval(function() {
-      i = i +1;
-    }, 500)
+    timingOutput(20);
+    function timingOutput(msT){
+      let i = 0;
+      timer = setInterval(() => {
+        outputArea.append(outputString.charAt(i));
+        i = i +1;
+        msT = msT - 50;
+        if (outputString.length === i) {
+           clearInterval(timer);
+        }
+        console.log(outputString.length);
+      }, msT);
+    }
   });//outputArea.append = outputArray;
 });
     //document.getElementById("output").innerText =robo(argument);
