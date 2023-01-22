@@ -1,5 +1,5 @@
 //Business Logic
-
+let toDL = [];
 //let roboTalkFinalSpace
 function robo(numb){
   //counting array
@@ -49,9 +49,9 @@ function robo(numb){
     };
   };
 }
-roboTalkFinalSpace = roboTalkFinal.join("  ~  ",);
-//return roboTalkFinalSpace;
-}        
+
+return roboTalkFinal;
+}  
 
 
 // UI Logic
@@ -59,9 +59,17 @@ window.addEventListener("load", function(e){
   e.preventDefault();
   document.getElementById("button").addEventListener("click", function() {
     let argument = document.getElementById("input-area").value
-    console.log(argument);
-    robo(argument)
-
-    document.getElementById("output").innerText = roboTalkFinalSpace
-  });
+    let outputArray = robo(argument);
+    const outputArea = document.getElementById("output-area");
+    const createO = document.createElement("p");
+    outputString = outputArray.toString();
+    for (i = 0; i < 100; i = setInterval(i++, 5000))
+    outputArea.append(outputString.charAt(i));
+    setInterval(function() {
+      i = i +1;
+    }, 500)
+  });//outputArea.append = outputArray;
 });
+    //document.getElementById("output").innerText =robo(argument);
+
+
