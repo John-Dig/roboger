@@ -1,6 +1,4 @@
 //Business Logic
-let toDL = [];
-//let roboTalkFinalSpace
 function robo(numb){
   //counting array
   counterArray = [];
@@ -49,35 +47,58 @@ function robo(numb){
     };
   };
 }
-
 return roboTalkFinal;
 }  
 
+//reset procedure
+function resetProcedure(){
+  let outputArea = document.getElementById("output-area");
+  console.log(outputArea);
+  outputArea.innerText = ""
+  console.log(document.querySelector("p"));
+  document.getElementById("reset-button").setAttribute("class","hidden");
+  document.getElementById("input-area").value = ""
+  clearInterval(timer);
+
+}
+//timing logic
+function timingOutput(msT){
+  let i = 0;
+  const argument = document.getElementById("input-area").value
+  const outputArea = document.getElementById("output-area");
+  timer = setInterval(() => {
+    //if no input 
+    if (argument === "") {
+      console.log(parseInt(argument));
+      outputArea.append("Mr. Roboger needs INPUT, please push reset and give him a number");
+      document.getElementById("reset-button").setAttribute("class","visible");
+      clearInterval(timer);
+    }
+    //printing sequence
+    let outputArray = robo(argument);
+    outputString = outputArray.toString();
+    outputArea.append(outputString.charAt(i));
+    if (i === 0){
+      document.getElementById("reset-button").setAttribute("class","visible");
+    }
+    i++;
+    //stopping sequence
+    if (outputString.length === i && argument !== "") {
+      console.log(outputString.length);
+      clearInterval(timer);
+    }
+  }, msT);
+}  
 
 // UI Logic
 window.addEventListener("load", function(e){
   e.preventDefault();
   document.getElementById("button").addEventListener("click", function() {
-    let argument = document.getElementById("input-area").value
-    let outputArray = robo(argument);
-    const outputArea = document.getElementById("output-area");
-    const createO = document.createElement("p");
-    outputString = outputArray.toString();
-    timingOutput(20);
-    function timingOutput(msT){
-      let i = 0;
-      timer = setInterval(() => {
-        outputArea.append(outputString.charAt(i));
-        i = i +1;
-        msT = msT - 50;
-        if (outputString.length === i) {
-           clearInterval(timer);
-        }
-        console.log(outputString.length);
-      }, msT);
-    }
-  });//outputArea.append = outputArray;
+    timingOutput(18);
+    document.getElementById("reset-button").addEventListener("click", function(){
+      resetProcedure();
+    })
+  });
 });
-    //document.getElementById("output").innerText =robo(argument);
 
 

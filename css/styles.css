@@ -1,5 +1,30 @@
 body{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 3em;
-  background-color: darkgray;
+  font-size: 1.5em;
+  background-color:beige;
+}
+
+input {
+  font-size: 1.25em;
+  width: 4em;
+  margin:1em;
+  
+
+}
+
+button {
+  font-size: 1.25em;
+  background-color:red;
+  border-style: double;
+  border-width: 15px;
+  margin: 1em;
+
+
+}
+.hidden {
+  display:none;
+} 
+
+.visible {
+  display:unset;
 }
