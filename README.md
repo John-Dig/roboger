@@ -101,10 +101,11 @@ UI extras
 1.0: fully functional.
 1.1: added delayed output.
 1.2: added reset button.
-1.21: minor changes in declaring variables in js business logic
+1.21: minor changes in declaring variables, fixed indenting, but left _timer_ as a global variable due to it needing to be cancelled in the separate _resetProcedure_ function. 
 
-_Future possibilities_
+#### Future possible changes
 * could refactor lines 9-20 into lines 21-48 for efficiency/ simplification
+* fix _timer_ being declared a global variable
 * add speed change input.
 
 ###### License
