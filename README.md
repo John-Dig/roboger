@@ -24,13 +24,6 @@
 - if you click before Mr. Roboger finishes his phrases, you may push him to be unpredictable (this could also be seen as a feature).  You wouldn't interrupt the real Mr. Rogers before he finished speaking would you?
 
 
-###### License
-
-##### Epicodus
->Copyright (c) 2023 John Diggins
- 
-
-
 ## Test Driven Development
 
 Describe: robo()
@@ -111,6 +104,7 @@ UI extras
 Future possibilities
 1.3: add speed input.
 
+###### License
 
--still need
-readme complete
+##### Epicodus
+>Copyright (c) 2023 John Diggins
