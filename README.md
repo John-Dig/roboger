@@ -10,25 +10,28 @@
 - Google search engine
 
 ### Description
- This webpage will simply output the 
+ The program simply outputs a number of phrases corresponding to the number entered.  Some of the phrases displayed are simply the number of the phrase, but this changes as numbers get higher.  When certain single digits are detected in the phrase number, they become a different phrase.  It looks somewhat random, but it's not.  Perhaps you can figure out what the patter is?
+
+### Background
+ The _Mr. Roboger_ character is based on Fred Roger's character in the children's television show: _Mr. Rogers Neighborhood_, which aired from 1968-2001. The real Mr. Rogers had passed on.  Mr. Roboger attempts to bring back his spirit, however, he does a terrible job at it.  He's only a robot, and a very simple robot at that. This is just a first try by a beginning programmerat bringing back his spirit. 
+
+ ### Setup/ Installation Requirements
+ - Clone this repository to your desktop.
+ - Navigate to the top level of the directory: roboger.
+ - Open index.html in your browser.
+
+### Known Bugs
+- if you click before Mr. Roboger finishes his phrases, you may push him to be unpredictable (this could also be seen as a feature).  You wouldn't interrupt the real Mr. Rogers before he finished speaking would you?
 
 
+###### License
+
+##### Epicodus
+>Copyright (c) 2023 John Diggins
+ 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-## TDD
+## Test Driven Development
 
 Describe: robo()
  .1
@@ -99,17 +102,14 @@ Test: now outputs contingent on index number CONTAINING specific digit.
 Test: robo(20)
 Code: robo(20);
 Expected Output: {...}, 9, beep, beep, Boop!,'Won't you be my neighbor?',beep,beep,We all have different gifts!,beep,I don't wear sweaters, I'm a robot,beep,boop! 
- 
 
-1.0
-1.01 functions with return
-1.1 add timeout
 
-# 1.2 add reset button
-
-options for future:
-faster/ slower text
-
+UI extras
+1.0: fully functional.
+1.1: added delayed output.
+1.2: added reset button.
+Future possibilities
+1.3: add speed input.
 
 
 -still need
