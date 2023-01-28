@@ -1,3 +1,35 @@
+## Mr. Roboger's Neighborhood
+
+### by John Diggins
+#### Just a fun project
+
+### Technologies Used
+- Javascript
+- HTML
+- CSS
+- Google search engine
+
+### Description
+ This webpage will simply output the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## TDD
+
 Describe: robo()
  .1
 Test: framework is set: it outputs to live server console for easier further testing
