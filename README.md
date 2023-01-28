@@ -101,8 +101,11 @@ UI extras
 1.0: fully functional.
 1.1: added delayed output.
 1.2: added reset button.
-Future possibilities
-1.3: add speed input.
+1.21: minor changes in declaring variables in js business logic
+
+_Future possibilities_
+* could refactor lines 9-20 into lines 21-48 for efficiency/ simplification
+* add speed change input.
 
 ###### License
 
